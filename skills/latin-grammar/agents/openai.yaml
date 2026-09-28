@@ -1,0 +1,4 @@
+interface:
+  display_name: "Latin Grammar"
+  short_description: "Understand Latin forms and syntax with careful explanations."
+  default_prompt: "Use $latin-grammar to explain a Latin sentence and guide me through a similar example."

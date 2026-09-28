@@ -1,0 +1,35 @@
+[
+  {
+    "id": "latin-conversation",
+    "title": "拉丁语对话",
+    "summary": "从一个短场景开始，边说边理解，得到有重点的纠错。",
+    "status": "draft",
+    "version": null,
+    "compatibility": [],
+    "github_url": "https://github.com/paysondong/latinviva/tree/main/skills/latin-conversation",
+    "entry": "skills/latin-conversation/SKILL.md",
+    "demo_status": "authored_example"
+  },
+  {
+    "id": "latin-grammar",
+    "title": "拉丁语语法",
+    "summary": "理解词形与句子的关系，把解释变成下一次能用的知识。",
+    "status": "draft",
+    "version": null,
+    "compatibility": [],
+    "github_url": "https://github.com/paysondong/latinviva/tree/main/skills/latin-grammar",
+    "entry": "skills/latin-grammar/SKILL.md",
+    "demo_status": "authored_example"
+  },
+  {
+    "id": "latin-vocabulary",
+    "title": "拉丁语词汇",
+    "summary": "用短测验发现不会的词，给出提示并回顾错题。",
+    "status": "draft",
+    "version": null,
+    "compatibility": [],
+    "github_url": "https://github.com/paysondong/latinviva/tree/main/skills/latin-vocabulary",
+    "entry": "skills/latin-vocabulary/SKILL.md",
+    "demo_status": "authored_example"
+  }
+]

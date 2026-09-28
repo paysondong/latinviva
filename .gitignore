@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+.astro/
+dist/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.keystore
+*.db
+*.sqlite
+__pycache__/
