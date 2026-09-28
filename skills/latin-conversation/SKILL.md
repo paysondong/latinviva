@@ -1,6 +1,6 @@
 ---
 name: latin-conversation
-description: "Practise Latin through short, level-appropriate conversations with hints and explanations. Use when a learner asks for Latin roleplay, conversational practice, or feedback within a dialogue, including 拉丁语对话练习. For detailed sentence analysis without a conversation, use a grammar workflow instead."
+description: "Practise Latin through short, level-appropriate conversations with hints and explanations. Use when a learner asks for Latin roleplay, conversational practice, or feedback within a dialogue. For detailed sentence analysis without a conversation, use a grammar workflow instead."
 ---
 
 # Latin Conversation

@@ -1,4 +1,4 @@
 interface:
   display_name: "Latin Conversation"
   short_description: "Practise short Latin conversations with guided feedback."
-  default_prompt: "Use $latin-conversation for a beginner Latin conversation with Chinese hints."
+  default_prompt: "Use $latin-conversation for a beginner Latin conversation with English hints."

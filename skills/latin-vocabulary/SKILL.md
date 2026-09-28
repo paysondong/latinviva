@@ -1,6 +1,6 @@
 ---
 name: latin-vocabulary
-description: "Run short Latin vocabulary exercises with answer checking, contextual examples and targeted review. Use for Latin word practice, flashcards, a small quiz, or 拉丁语词汇练习. This is practice on a defined word set, not a certified vocabulary-size or proficiency assessment."
+description: "Run short Latin vocabulary exercises with answer checking, contextual examples and targeted review. Use for Latin word practice, flashcards, or a small quiz. This is practice on a defined word set, not a certified vocabulary-size or proficiency assessment."
 ---
 
 # Latin Vocabulary
@@ -15,7 +15,7 @@ Prefer open recall. For multiple choice, use genuinely distinct options; do not 
 
 ## Evaluate fairly
 
-- Check against the sense asked and any supplied context. Accept valid synonyms and equivalent Chinese/English answers. Do not apply literal string matching to meanings.
+- Check against the sense asked and any supplied context. Accept valid synonyms and equivalent answers in the learner's explanation language. Do not apply literal string matching to meanings.
 - Do not mark omitted macrons wrong in a meaning exercise. If testing forms or vowel length, agree that goal first and grade that feature explicitly.
 - Keep counts of independent correct answers, answers reached with hints, revealed answers and skipped questions. Report them separately; do not count a revealed answer as independent recall.
 - After a wrong answer, explain the distinction and give a short, clearly constructed example. Put that word into a later review question. Mark review results separately rather than inflating the initial score.

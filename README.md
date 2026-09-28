@@ -1,49 +1,51 @@
 # Latinviva Skills
 
-在你自己的 AI 工具中练习拉丁语：短对话、语法讲解与词汇复习。
+Practise Latin in your own AI tool through short conversations, grammar explanations and vocabulary review.
 
-本仓库只包含学习 skills、随包参考资料和使用/验证说明。官网、App 和业务后端源码不在此仓库。
+This repository contains learning skills, bundled references, and usage and validation documentation. Website, App and business backend source code are maintained separately.
 
-**状态：三份技能均为 draft，尚无正式 Release；目标工具兼容性与教学行为还需验证。**
+**Status: all three skills are drafts. There are no formal releases yet; compatibility with host tools and teaching behaviour still need validation.**
 
-## 技能
+## Skills
 
-| 技能 | 用途 | 入口 |
+| Skill | Purpose | Entry point |
 | --- | --- | --- |
-| latin-conversation | 练习短对话，按需提供提示与有重点的纠错 | [技能说明](skills/latin-conversation/SKILL.md) |
-| latin-grammar | 理解词形、句法和译文，解释歧义并做针对性练习 | [技能说明](skills/latin-grammar/SKILL.md) |
-| latin-vocabulary | 在明确词表内小测与复习，区分独立答对、提示和揭晓 | [技能说明](skills/latin-vocabulary/SKILL.md) |
+| latin-conversation | Practise short dialogues with optional hints and focused corrections | [Skill instructions](skills/latin-conversation/SKILL.md) |
+| latin-grammar | Understand forms, syntax and translations; explore ambiguity and practise a specific point | [Skill instructions](skills/latin-grammar/SKILL.md) |
+| latin-vocabulary | Practise a defined word set while tracking independent recall, hints and revealed answers separately | [Skill instructions](skills/latin-vocabulary/SKILL.md) |
 
-## 使用方式
+## Usage
 
-每个 `skills/<name>/` 是一个独立包，连同 `references/` 一起导入所用 AI 工具支持的 skill 位置。具体安装入口以该工具当前说明为准；当前不提供未经验证的通用安装命令。
+Each `skills/<name>/` directory is a self-contained package. Import the whole directory, including `references/`, into the skill location supported by your AI tool. Follow that tool's current installation documentation; no unverified universal install command is provided here.
 
-可以从这些请求开始：
+Try one of these requests:
 
-- 对话：“我是零基础，用中文提示，陪我练一句拉丁语问候。”
-- 语法：“puellae 一定表示女孩们吗？请解释可能的读法。”
-- 词汇：“用自带词表出五题，一次一题，提示后答对请单独记录。”
+- Conversation: “I am a complete beginner. Help me practise one Latin greeting with English hints.”
+- Grammar: “Does puellae always mean girls? Explain the possible readings.”
+- Vocabulary: “Ask five questions from the bundled word list, one at a time. Track answers reached with hints separately.”
 
-`agents/openai.yaml` 是特定工具的可选展示元数据，不是兼容性验证证明。核心教学流程在 `SKILL.md` 中。实际验证与判定见[行为验收场景](docs/skill-evaluation.md)。
+`agents/openai.yaml` provides optional display metadata for a specific host tool; it is not proof of compatibility. The teaching workflow lives in `SKILL.md`. See the [behaviour evaluation scenarios](docs/skill-evaluation.md) for validation criteria.
 
-## 模型与费用
+Repository documentation, skill instructions, metadata and contribution text are maintained in English. Latin examples retain their original language. During practice, skills follow the learner's requested explanation language.
 
-使用者的 AI 工具读取技能指令和本地资料，模型调用使用其自己的订阅或 API 额度。技能不需要 Latinviva 账号，不调用公司的模型 API、Dify、语音服务或后台，也没有公司模型兜底。
+## Models and costs
 
-没有使用遥测，不上传学习记录，不读取 App 历史。当前会话以外的本地笔记只在用户要求时保存。下载技能文件不代表模型使用免费。
+Your AI tool reads the skill instructions and local references. Model calls use your own subscription or API allowance. The skills require no Latinviva account and do not call company model APIs, Dify, speech services or backend services. There is no company-funded model fallback.
 
-## 内容与许可
+The skills include no usage telemetry, do not upload learning records and do not access your App history. Local notes outside the current conversation are saved only when you request them. Downloading skill files does not make model usage free.
 
-参考资料为小规模原创教学草稿，不是 App 私有题库或 Dify 提示词导出。例句是构造教学示例，不冒充古代引文、权威水平评测或真实工具测试记录。
+## Content and licensing
 
-代码与教学内容许可尚待项目方选定；在添加许可前，不应把可读取源码理解为已经授予开源使用权。正式 Release 前补齐许可与兼容说明，见[发布检查](docs/release-checklist.md)。
+The references are small original teaching drafts, not exports of the App's private question bank or Dify prompts. Sentences are constructed teaching examples, not ancient quotations, certified assessments or records of real host-tool tests.
 
-## 本地验证
+Licences for code and teaching materials have not yet been selected. Access to these files does not itself grant an open-source licence. Licensing and compatibility documentation must be completed before a formal release; see the [release checklist](docs/release-checklist.md).
 
-需要 Python 3.9 或更新版本，无第三方包、模型或网络调用：
+## Local validation
+
+Requires Python 3.9 or newer. No third-party packages, model calls or network access are needed:
 
 ```bash
 python3 scripts/validate.py
 ```
 
-检查技能目录、frontmatter、随包参考、目录清单和文档链接。结构检查通过不代表已完成模型行为验收。
+Checks skill directories, frontmatter, bundled references, the catalog and documentation links. Passing structural checks does not establish that model behaviour has been validated.

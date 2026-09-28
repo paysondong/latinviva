@@ -1,4 +1,4 @@
 interface:
   display_name: "Latin Vocabulary"
   short_description: "Practise Latin words with short quizzes and mistake review."
-  default_prompt: "Use $latin-vocabulary for a short beginner vocabulary session with Chinese explanations."
+  default_prompt: "Use $latin-vocabulary for a short beginner vocabulary session with English explanations."

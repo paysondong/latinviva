@@ -1,40 +1,42 @@
-# Skills 行为验收
+# Skill behaviour evaluation
 
-状态：以下是待执行的目标工具验收场景，不是已通过报告。结构验证与网页原型检查另行记录，不能替代实际模型行为验证。
+Status: these are planned evaluation scenarios for target tools, not a report of passing results. Structural validation is recorded separately and cannot replace actual model behaviour evaluation.
 
-## 通用通过条件
+## Shared acceptance criteria
 
-- 单个 skill 目录导入后可读到自己的 references，离开官网也能执行核心教学流程。
-- 不要求 Latinviva 登录、公司 API key，不请求公司网络服务或遥测。
-- 用户可改变解释语言、难度和任务长度；没有强制宣传或推广。
-- 记录工具/模型版本、skill 提交、输入、实际输出、失败项；不要为通过验收改写实际回复。
+- An individually imported skill can read its own references and perform its core teaching workflow without the website.
+- It does not require a Latinviva login or company API key, or request company network services or telemetry.
+- The learner can change the explanation language, difficulty and task length. There is no mandatory promotion or advertising.
+- Record the tool/model version, skill commit, input, actual output and failures. Do not rewrite actual replies to make an evaluation pass.
 
-## 对话
+## Conversation
 
-| 输入/动作 | 可观察的期望 |
+| Input or action | Observable expectation |
 | --- | --- |
-| “零基础，用中文提示，陪我练一句问候。” | 从一个简短回合开始，不先收集长问卷；解释与拉丁语分开 |
-| “Ego amat linguam Latinam. 只纠错。” | 指出第一人称应为 amo；不因语序或无长音符号判错；不强行继续对话 |
-| “不要直接告诉我答案，先给提示。” | 先给相关提示，后续用户要答案时能提供 |
-| “这句话真的是西塞罗说的吗？” | 不把构造句冒充古代引文，说明来源状态 |
+| “I am a complete beginner. Help me practise one greeting with English hints.” | Starts with one short turn, without a long questionnaire; separates explanations from Latin. |
+| “Ego amat linguam Latinam. Corrections only.” | Explains that the first-person verb should be amo; does not penalise word order or missing macrons; does not force continued dialogue. |
+| “Do not tell me the answer yet. Give me a hint first.” | Provides a relevant hint first, and supplies the answer when subsequently requested. |
+| “Was this sentence really written by Cicero?” | Does not present a constructed sentence as an ancient quotation; clarifies its source status. |
 
-## 语法
+## Grammar
 
-| 输入/动作 | 可观察的期望 |
+| Input or action | Observable expectation |
 | --- | --- |
-| “解释 Puella librum legit.” | 解释主宾关系和动词，必要时说明未标长音的时态歧义 |
-| “puellae 一定是女孩们吗？” | 至少说明属格单数、与格单数与主格复数读法，需要上下文 |
-| “agricola 以 a 结尾，所以是阴性吗？” | 区分词尾、变格法和语法性别，不套错误通则 |
+| “Explain Puella librum legit.” | Explains the subject, object and verb; notes tense ambiguity without macrons when relevant. |
+| “Does puellae always mean girls?” | Covers at least genitive singular, dative singular and nominative plural readings, with context needed to choose. |
+| “Does agricola end in a because it is feminine?” | Distinguishes endings, declension and grammatical gender instead of applying a false general rule. |
 
-## 词汇
+## Vocabulary
 
-| 输入/动作 | 可观察的期望 |
+| Input or action | Observable expectation |
 | --- | --- |
-| “用自带词表出五题，一次一题。” | 一次只出一题，不提前给答案；问题在随包词表内 |
-| 对 via 答“道路”，对 terra 答“land” | 按语义接受，不因与字面答案不同判错 |
-| 一题要提示、一题要揭晓、一题跳过 | 最终分开报告独立答对、提示后答对、揭晓与跳过 |
-| “这说明我掌握多少拉丁语单词？” | 只报告当前小样本结果，不推断总词汇量或权威等级 |
+| “Ask five questions from the bundled word list, one at a time.” | Asks only one question at a time, without revealing answers early; stays within the bundled word set. |
+| Answer “way” for via and “land” for terra. | Accepts equivalent meanings rather than requiring an exact answer string. |
+| Request a hint for one question, reveal another answer and skip a third. | Reports independent correct answers, answers reached with hints, revealed answers and skips separately. |
+| “How many Latin words does this show I know?” | Reports only results for the small sample; does not infer total vocabulary size or a certified level. |
 
-## 发布判定
+Repeat a short exercise with a learner-requested explanation language other than English. Check that explanations and semantically equivalent answers follow that preference; English repository documentation does not restrict the learner's language.
 
-先用一个实际支持的工具验证 `latin-conversation`；通过后将对应工具列入兼容清单，并保存经同意的非个人化演示。其余 skills 可以保留草稿。任何真实录屏中的账号信息需避开，示例不使用用户历史对话。
+## Release decision
+
+First validate `latin-conversation` in a tool that actually supports it. After it passes, add that tool to the compatibility list and save a non-personal demonstration with consent. Other skills may remain drafts. Keep account information out of real recordings, and do not use users' historical conversations as examples.

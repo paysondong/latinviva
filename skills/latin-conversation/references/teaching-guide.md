@@ -20,7 +20,7 @@ The scene is for introductory pedagogical conversation. Follow a learner's chose
 
 Learner: `Ego amat linguam Latinam.`
 
-Possible feedback in Chinese: “意思很清楚。这里主语是‘我’，动词用 `amo`，不是第三人称的 `amat`：`Ego amo linguam Latinam.` 也可以省略 `ego`，说 `Linguam Latinam amo.`”
+Possible feedback in English: “Your meaning is clear. The subject here is ‘I’, so use `amo` rather than the third-person `amat`: `Ego amo linguam Latinam.` You can also omit `ego` and say `Linguam Latinam amo.`”
 
 Continue with a short relevant question only if the learner is practising a dialogue. Avoid adding vocabulary far above the demonstrated level.
 

@@ -1,8 +1,8 @@
 [
   {
     "id": "latin-conversation",
-    "title": "拉丁语对话",
-    "summary": "从一个短场景开始，边说边理解，得到有重点的纠错。",
+    "title": "Latin Conversation",
+    "summary": "Start with a short scene, learn through dialogue and receive focused corrections.",
     "status": "draft",
     "version": null,
     "compatibility": [],
@@ -12,8 +12,8 @@
   },
   {
     "id": "latin-grammar",
-    "title": "拉丁语语法",
-    "summary": "理解词形与句子的关系，把解释变成下一次能用的知识。",
+    "title": "Latin Grammar",
+    "summary": "Understand how word forms shape a sentence and practise applying the explanation.",
     "status": "draft",
     "version": null,
     "compatibility": [],
@@ -23,8 +23,8 @@
   },
   {
     "id": "latin-vocabulary",
-    "title": "拉丁语词汇",
-    "summary": "用短测验发现不会的词，给出提示并回顾错题。",
+    "title": "Latin Vocabulary",
+    "summary": "Use short quizzes to find unfamiliar words, get hints and review mistakes.",
     "status": "draft",
     "version": null,
     "compatibility": [],

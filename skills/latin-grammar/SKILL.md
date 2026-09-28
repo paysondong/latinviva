@@ -1,6 +1,6 @@
 ---
 name: latin-grammar
-description: "Explain Latin morphology, syntax and translation choices, and guide a learner through corrections or a related exercise. Use for Latin sentence analysis, declension, conjugation, grammar questions, or 拉丁语语法与句子解析. Keep a free conversation or long vocabulary drill outside the main workflow."
+description: "Explain Latin morphology, syntax and translation choices, and guide a learner through corrections or a related exercise. Use for Latin sentence analysis, declension, conjugation, or grammar questions. Keep a free conversation or long vocabulary drill outside the main workflow."
 ---
 
 # Latin Grammar

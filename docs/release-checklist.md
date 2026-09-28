@@ -1,18 +1,19 @@
-# Skills 发布检查
+# Skills release checklist
 
-本仓库仅发布技能包及相关使用说明。当前三份技能为 draft，源码入库不等于正式 Release。
+This repository publishes skill packages and related documentation only. All three skills are currently drafts; committing files is not a formal release.
 
-## 发布前
+## Before release
 
-- 技能目录自包含；只安装单个目录也能读取所需 references。
-- 不包含公司凭据、用户数据、私有题库或未授权素材。
-- 核心任务使用用户自己的 AI，无公司服务调用、后台遥测或公司模型兜底。
-- `python3 scripts/validate.py` 通过，并在目标工具完成[行为验收](skill-evaluation.md)。
-- 明确代码与教学资料许可、经过验证的工具/模型、已知限制。
-- 更新目录清单中的状态、版本和兼容记录，再发布对应版本；草稿不使用已发布标签。
+- Each skill is self-contained: installing its directory alone preserves access to its references.
+- Packages contain no company credentials, user data, private question banks or unauthorised materials.
+- Core tasks use the learner's own AI, with no company service calls, background telemetry or company-funded fallback.
+- `python3 scripts/validate.py` passes, and [behaviour evaluation](skill-evaluation.md) is completed in the target tool.
+- Code and teaching-material licences, verified tools/models and known limitations are documented.
+- Documentation, metadata, commit messages and release notes are in English; Latin teaching examples retain their original language.
+- Catalog status, version and compatibility records are updated before the corresponding version is released. Drafts are not labelled as released.
 
-## 版本说明
+## Release notes
 
-发布说明描述实际新增能力、修复与限制。教学示例标清构造示例或实际运行记录，不夸大效果；未经验证的工具不列为兼容。
+Describe actual capabilities, fixes and limitations. Clearly distinguish constructed teaching examples from real execution records. Do not exaggerate outcomes or list untested tools as compatible.
 
-网站可以引用这个仓库的已发布技能信息，但网站源码及部署配置不进入该仓库。
+A website may reference published skill information from this repository, but website source code and deployment configuration do not belong here.

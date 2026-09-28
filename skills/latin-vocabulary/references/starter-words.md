@@ -4,14 +4,14 @@ Status: small original exercise set, awaiting independent teaching review. This 
 
 | ID | Dictionary form | Gender | Core sense for the starter exercise | Common acceptable answer |
 | --- | --- | --- | --- | --- |
-| LV001 | aqua, aquae | feminine | 水 | water |
-| LV002 | rosa, rosae | feminine | 玫瑰 | rose / 玫瑰花 |
-| LV003 | via, viae | feminine | 道路 | road / way / 路 |
-| LV004 | porta, portae | feminine | 门；城门 | gate / gateway |
-| LV005 | terra, terrae | feminine | 土地；大地 | earth / land / ground |
-| LV006 | luna, lunae | feminine | 月亮 | moon |
-| LV007 | liber, libri | masculine | 书 | book / 书籍 |
-| LV008 | agricola, agricolae | masculine | 农夫 | farmer / 农民 |
+| LV001 | aqua, aquae | feminine | water | water |
+| LV002 | rosa, rosae | feminine | rose | rose / rose flower |
+| LV003 | via, viae | feminine | road | road / way |
+| LV004 | porta, portae | feminine | gate; city gate | gate / gateway |
+| LV005 | terra, terrae | feminine | earth; land | earth / land / ground |
+| LV006 | luna, lunae | feminine | moon | moon |
+| LV007 | liber, libri | masculine | book | book |
+| LV008 | agricola, agricolae | masculine | farmer | farmer |
 
 These senses are appropriate for a small beginner set, not exhaustive dictionary entries. If a learner gives another possible sense, consider context and explain it instead of blindly rejecting it.
 
